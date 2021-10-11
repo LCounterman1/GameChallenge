@@ -41,9 +41,9 @@ namespace PairProgrammingConsoleAssignment
         //main menu
         public void Title()
         {
-            Console.WriteLine("Welcome to the Hidden Castle.\n" + "You will be going on a journey where you will be tested on your knowledge in order to slay the Mad Dragon.\n" + "But fear not, the journey may be tough, but you'll ultimately feel rewarded in the end.\n" + "Press any key to continue.....");
+            Console.WriteLine("Welcome to the Hidden Castle.\n" + "You will be going on a journey where you will be tested on your knowledge in order to slay the Mad Dragon.\n" + "But fear not, the journey may be tough, but you'll ultimately feel rewarded in the end.\n" + "Press Enter to continue.....");
             Console.ReadLine();
-            Console.WriteLine("So let's begin! \n" + "Press any key to continue.....");
+            Console.WriteLine("So let's begin! \n" + "Press Enter to continue.....");
             Console.ReadLine();
             Console.Clear();
         }
@@ -51,10 +51,10 @@ namespace PairProgrammingConsoleAssignment
         public void LevelOne()
         {
             Console.WriteLine("You wake up in a dusty, grimey dungeon where all that's beside you\n" +
-                "is an empty potato sack, a burnt candle, and a mountain of hay.\n" + "You want to leave, but the cage is locked.\n" + "Press any key to continue...");
+                "is an empty potato sack, a burnt candle, and a mountain of hay.\n" + "You want to leave, but the cage is locked.\n" + "Press Enter to continue...");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("You look around and see a shiny object sticking out of the hay. \n" + "Press any key to continue.....");
+            Console.WriteLine("You look around and see a shiny object sticking out of the hay.");
             bool lockedInside = true;
             while (lockedInside)
             {
@@ -62,7 +62,7 @@ namespace PairProgrammingConsoleAssignment
                 string input = Console.ReadLine().ToUpper();
                 if (input == "YES")
                 {
-                    Console.WriteLine("You now have the Gold KEY. \n" + "Press any key to continue.....");
+                    Console.WriteLine("You now have the Gold KEY. \n" + "Press Enter to continue.....");
                     Console.ReadLine();
                     Console.Clear();
                     break;
@@ -97,12 +97,12 @@ namespace PairProgrammingConsoleAssignment
                     if (input3 == "YES")
                     {
                         Console.WriteLine("You now have the almighty sword! \n" +
-                            "This room is a dead end, turn back and try another door. \n" + "Press any key to continue.....");
+                            "This room is a dead end, turn back and try another door. \n" + "Enter to continue.....");
                         Console.ReadLine();
                     }
                     else if (input3 == "NO")
                     {
-                        Console.WriteLine("This room is a dead end, turn back and try another door. \n" + "Press any key to continue");
+                        Console.WriteLine("This room is a dead end, turn back and try another door. \n" + "Enter");
                     }
                     else
                     {
