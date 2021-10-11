@@ -88,42 +88,28 @@ namespace PairProgrammingConsoleAssignment
                 string input2 = Console.ReadLine().ToUpper();
                 if (input2 == "BEDROOM")
                 {
-                    Console.WriteLine("You are in what looks to be a bedroom.\n" + "The bed is unmade, and the night stand has an abstract painting of what vaguely appears to be a dragon.\n" +
-                "On the other side of the bedroom, a glass case is holding an almighty sword.\n" +
-                "Do you want take the SWORD?\n" + "Enter YES or NO");
+                    Console.WriteLine("You are in what looks to be a bedroom.\n" + "The bed is unmade, and the night stand has an abstract painting of what vaguely appears to be a dragon.\n" + "Congratulations! You have found the almighty sword. \n" + "Press Enter to continue exit the room....");
                     Console.ReadLine();
                     Console.Clear();
-                    string input3 = Console.ReadLine().ToUpper();
-                    if (input3 == "YES")
-                    {
-                        Console.WriteLine("You now have the almighty sword! \n" +
-                            "This room is a dead end, turn back and try another door. \n" + "Enter to continue.....");
-                        Console.ReadLine();
-                    }
-                    else if (input3 == "NO")
-                    {
-                        Console.WriteLine("This room is a dead end, turn back and try another door. \n" + "Enter");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Please enter YES or NO");
-                    }
                 }
                 else if (input2 == "DINING ROOM")
                 {
-                    Console.WriteLine("You are now in a elegant dining room where three doors\n" +
+                    Console.WriteLine("You are now in an elegant dining room where three doors\n" +
                 " stand at the end of the hallway.\n" +
-                "Each door has as sign above them stating their respective rooms.\n" +
-                "Which door would you like to go through?\n" +
-                "OFFICE, MAIN ENTRACE, or COURTYARD");
+                "Press Enter to Continue..... ");
                     Console.ReadLine();
                     Console.Clear();
+                    break;
                 }
                 else
                 {
                     Console.WriteLine("Please enter one of the following options : BEDROOM or DINING ROOM");
                 }
             }
+        }
+        public void LevelThree()
+        {
+            
         }
 
     }
